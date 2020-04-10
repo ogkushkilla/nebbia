@@ -304,6 +304,7 @@ body {
 
 .demo-description {
   text-align: center;
+  font-size: 17px;
   margin-bottom: 50px;
 }
 
@@ -333,6 +334,12 @@ body {
   padding: 60px;
   background-size: contain;
   background: #fff url("../img/offer-bg-price.jpg") no-repeat center right;
+}
+
+.offer-block_faq {
+  padding: 60px;
+  background-size: contain;
+  background: #fff url("../img/faq.jpg") no-repeat center right;
 }
 
 .offer__title {
@@ -371,6 +378,12 @@ body {
 
 .form__input {
   width: 100%;
+  padding: 0 20px;
+}
+
+.form__input-faq {
+  width: 200%;
+  height: 200px;
   padding: 0 20px;
 }
 
@@ -473,5 +486,58 @@ body {
 
 .contacts__address {
   font-style: normal;
+}
+
+.footer {
+  padding: 40px 0;
+  background-color: #262626;
+  color: #fff;
+}
+
+.footer-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__title {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.footer__subtitle {
+  display: block;
+  margin-bottom: 48px;
+}
+
+.footer__copyright {
+  color: #767676;
+}
+
+.footer__contacts {
+  text-align: right;
+}
+
+.footer__phone {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.footer__mail {
+  display: block;
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=style.css.map */
