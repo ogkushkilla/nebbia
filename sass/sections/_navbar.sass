@@ -34,7 +34,7 @@
         color: #6b6b6b
     
 .menu
-    position: fixed
+    position: relative
     z-index: 0
     top: 80px
     left: 0
@@ -42,9 +42,11 @@
     padding: 16px 0 
     background-color: #507fe1
     transition: 0.2s
-    transform: translateY(-100%)
+    transform: translateY(0)
+    opasity: 0
     &_active
         transform: translateY(0)
+        opasity: 1
     &__nav
         display: flex
         align-items: center
@@ -66,20 +68,24 @@
         border-left: 1px solid rgba(#510bba, 0.1)
         height: 80px
         width: 70px 
-        cursor: pointer
+        &:focus
+            outline: none
+        &:hover
+            cursor: pointer
         &__line 
             display: block 
             width: 25px
             height: 3px
             background-color: #89a9eb 
             margin: 3px 0
-            border-radius: 30%
 .logo
     &__text
         display: block
         font-size: 18px
         text-transform: uppercase
         font-weight: bold
+        text-decoration: none
+        color: black
     &__description
         margin-top: 5px
         display: block
