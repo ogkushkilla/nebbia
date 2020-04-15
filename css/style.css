@@ -417,6 +417,17 @@ body {
   color: #6b6b6b;
 }
 
+.form__button1 {
+  height: 80px;
+  margin: 0;
+  width: 100%;
+  background-color: #119e11;
+}
+
+.form__button1:hover {
+  background-color: #0e810e;
+}
+
 .reviews-slider {
   display: -webkit-box;
   display: -ms-flexbox;

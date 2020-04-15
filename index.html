@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WPXDJD7');</script>
+    <!-- End Google Tag Manager -->
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163319781-1"></script>
 <script>
@@ -17,8 +24,13 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="libs/jquery/jquery-3.5.0.min.js"></script>
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPXDJD7"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -71,7 +83,7 @@
                         <a class="navbar__second-site" href="https://www.tutgryazi.net" >www.tutgryazi.net</a>
                         <span class="navbar__sites-info">подробная информация на сайтах</span>
                     </div>
-                    <button class="button-o navbar__button" id="konsultacia" onclick="ym(61830181,'reachGoal','konsultacia'); return true;">Получить консультацию</button>
+                    <a href="#contacts"><button class="button-o navbar__button" id="konsultacia" onclick="ym(61830181,'reachGoal','konsultacia'); return true;">Получить консультацию</button></a>
                 </div>
             </div>
             <!-- /.container -->
@@ -82,7 +94,7 @@
                 <h1 class="hero__title">
                     Увлажнение,  экокондиционирование,  ароматизация, оздоровление воздуха Вашей квартиры, дома, офиса.
                 </h1>
-                <button class="button hero__button" id="zakaz" onclick="ym(61830181,'reachGoal','zakaz'); return true;">Заказать Nebbia</button>
+                <a href="#test"><button class="button hero__button" id="zakaz" onclick="ym(61830181,'reachGoal','zakaz'); return true;">Заказать Nebbia</button></a>
             </div>
         </div>
         <!-- /.hero -->
@@ -202,7 +214,7 @@
                             <input type="tel" class="form__input input" placeholder="Ваш телефон">
                         </div>
                         <div class="form__group">
-                            <input type="submit" class="button form__button" value="Оформить заказ" id="form-zakaz" onclick="ym(61830181,'reachGoal','form-zakaz'); return true;">
+                            <input type="submit" class="button form__button" value="Оформить заказ" id="form-zakaz1" onclick="replaceButton();">
                         </div>
                     </div>
                 </div>
@@ -271,7 +283,7 @@
                     </div>
                     <div class="form__row">
                         <div class="form__group">
-                            <input type="submit" class="button form__button" value="Заказать мою Nebbia-TWO" id="discount-zakaz" onclick="ym(61830181,'reachGoal','discount-zakaz'); return true;">
+                            <input type="submit" class="button form__button" value="Заказать мою Nebbia-TWO" id="discount1" onclick="replaceButton1();">
                         </div>
                         <div class="">
                             <span class="form__policy">Ваши данные надежно защищены.</span>
@@ -341,7 +353,7 @@
                     </div>
                     <div class="form__row">
                         <div class="form__group">
-                            <input type="submit" class="button form__button" value="Отправить" id="faq-form">
+                            <input type="submit" class="button form__button" value="Отправить" id="faq-form1" onclick="replaceButton2();">
                         </div>
                     </div>
                 </div>
@@ -376,5 +388,6 @@
         <!-- /.container -->
     </footer>
     <!-- /.footer -->
+    <script src="js/main.js"></script>
 </body>
 </html>
