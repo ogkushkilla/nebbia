@@ -1,22 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-WPXDJD7');</script>
-    <!-- End Google Tag Manager -->
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163319781-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-163319781-1');
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nebbia TWO - установка для дезинфекции помещений</title>
@@ -24,35 +8,13 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <script src="libs/jquery/jquery-3.5.0.min.js"></script>
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPXDJD7"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
- 
-    ym(61830181, "init", {
-         clickmap:true,
-         trackLinks:true,
-         accurateTrackBounce:true,
-         webvisor:true,
-         ecommerce:"dataLayer"
-    });
- </script>
- <noscript><div><img src="https://mc.yandex.ru/watch/61830181" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
- <!-- /Yandex.Metrika counter -->
-    <header class="header">
-        <a name="top"></a>
-        <div class="menu">
+    <header class="header" id="top">
+        <div class="menu" id="main">
             <div class="container">
                 <nav class="menu__nav">
-                    <a href="#" class="menu__link">Начало</a>
+                    <a href="#top" class="menu__link">Начало</a>
                     <a href="#dostoinstva" class="menu__link">Достоинства</a>
                     <a href="#test" class="menu__link">Тест драйв</a>
                     <a href="#subscribe" class="menu__link">Сервис по подписке</a>
@@ -64,11 +26,11 @@
         <div class="navbar">
             <div class="container">
                 <div class="navbar-wrap">
-                    <a href="#top"><button class="menu-button navbar__menu-button">
+                    <button class="menu-button navbar__menu-button">
                         <span class="menu-button__line"></span>
                         <span class="menu-button__line"></span>
                         <span class="menu-button__line"></span>
-                    </button></a>
+                    </button>
                     <div class="logo navbar__logo">
                         <strong class="logo__text"><a href="#top" class="logo__text">Nebbia TWO</a></strong>
                         <span class="logo__description">установка для дезинфекции помещений</span>
@@ -83,7 +45,7 @@
                         <a class="navbar__second-site" href="https://www.tutgryazi.net" >www.tutgryazi.net</a>
                         <span class="navbar__sites-info">подробная информация на сайтах</span>
                     </div>
-                    <a href="#contacts"><button class="button-o navbar__button" id="konsultacia" onclick="ym(61830181,'reachGoal','konsultacia'); return true;">Получить консультацию</button></a>
+                    <a href="#contacts"><button class="button-o navbar__button">Получить консультацию</button></a>
                 </div>
             </div>
             <!-- /.container -->
@@ -92,17 +54,17 @@
         <div class="hero">
             <div class="container">
                 <h1 class="hero__title">
-                    Увлажнение,  экокондиционирование,  ароматизация, оздоровление воздуха Вашей квартиры, дома, офиса.
+                    Nebbia TWO
                 </h1>
-                <a href="#test"><button class="button hero__button" id="zakaz" onclick="ym(61830181,'reachGoal','zakaz'); return true;">Заказать Nebbia</button></a>
+                <p class="hero__subtitle">Увлажнение,  экокондиционирование,  ароматизация, оздоровление воздуха Вашей квартиры, дома, офиса.</p>
+                <a href="#test"><button class="button hero__button">Заказать Nebbia</button></a>
             </div>
         </div>
         <!-- /.hero -->
     </header>
     <!-- /.header -->
     <main class="sections">
-        <p><a name="dostoinstva"></a></p>
-        <section class="features section">
+        <section class="features section" id="dostoinstva">
             <div class="container">
                 <h2 class="section-title section__title">Наши преимущества</h2>
                 <div class="features-block">
@@ -165,19 +127,18 @@
                 </div>
                 <p class="demo-description"></p>
                 <div class="demo__item-video">
-                    <video controls width="1200" height="600" src="https://video.wixstatic.com/video/cfd705_492cf2210ad24c098c17bc29547b48e8/1080p/mp4/file.mp4"></video>
+                    <video controls width="100%" height="600" src="https://video.wixstatic.com/video/cfd705_492cf2210ad24c098c17bc29547b48e8/1080p/mp4/file.mp4"></video>
                 </div>
             </div>
             <!-- /.container -->
         </section>
         <!-- /.section demo -->
-        <p><a name="test"></a></p>
-        <section class="section offer bg-secondary">
+        <section class="section offer bg-secondary" id="test">
             <div class="container">
                 <div class="offer-block offer-block_calc-bg offer__block">
                     <h2 class="offer__title">Оставьте заявку на тест-драйв</h2>
                     <span class="offer__subtitle">и получите месяц тест-драйва увлажнителя Nebbia-TWO</span>
-                    <form action="#" class="form form__offer" id="form-zakaz" method="get" onsubmit="ym(61830181,'reachGoal','form-zakaz'); return true;"></form>
+                    <form action="#" class="form form__offer">
                     <div class="form__row">
                         <div class="form__group">
                             <label for="" class="form__label">Увлажнитель</label>
@@ -214,11 +175,12 @@
                             <input type="tel" class="form__input input" placeholder="Ваш телефон">
                         </div>
                         <div class="form__group">
-                            <input type="submit" class="button form__button" value="Оформить заказ" id="form-zakaz1" onclick="replaceButton();">
+                            <input type="submit" class="button form__button" value="Оформить заказ">
                         </div>
                     </div>
                 </div>
                 <!-- /.offer-block offer__block -->
+            </form>
             </div>
             <!-- /.container -->
         </section>
@@ -233,7 +195,7 @@
                         </div>
                         <!-- /.reviews-slider__text -->
                         <img src="img/reviews/review-1.jpg" width="70px" height="70px" alt="" class="reviews-slider__image">
-                        <span class="reviews-slider__name">Иван Иванов <br>Екатеринбург</span> 
+                        <span class="reviews-slider__name">Иван Баранов <br>Екатеринбург</span> 
                         <!-- /.reviews-slider__name -->
                     </div>
                     <!-- /.reviews-slider__item -->
@@ -242,18 +204,18 @@
                             С появлением Nebbia в офисе коллеги стали чувствовать себя лучше!
                         </div>
                         <!-- /.reviews-slider__text -->
-                        <img src="img/reviews/review-1.jpg" width="70px" height="70px" alt="" class="reviews-slider__image">
-                        <span class="reviews-slider__name">Петр Петров <br>Екатеринбург</span> 
+                        <img src="img/reviews/review-3.jpg" width="70px" height="70px" alt="" class="reviews-slider__image">
+                        <span class="reviews-slider__name">Александр Краснов <br>Москва</span> 
                         <!-- /.reviews-slider__name -->
                     </div>
                     <!-- /.reviews-slider__item -->
                     <div class="reviews-slider__item">
                         <div class="reviews-slider__text">
-                            Установил Nebbia TWO у себя дома. Теперь планирую поставить и на даче.
+                            Установила Nebbia TWO у себя дома. Теперь планирую поставить и на даче.
                         </div>
                         <!-- /.reviews-slider__text -->
-                        <img src="img/reviews/review-1.jpg" width="70px" height="70px" alt="" class="reviews-slider__image">
-                        <span class="reviews-slider__name">Степан Степанов <br>Екатеринбург</span> 
+                        <img src="img/reviews/review-2.jpg" width="70px" height="70px" alt="" class="reviews-slider__image">
+                        <span class="reviews-slider__name">Ангелина Степанова <br>Екатеринбург</span> 
                         <!-- /.reviews-slider__name -->
                     </div>
                     <!-- /.reviews-slider__item -->
@@ -263,13 +225,12 @@
             <!-- /.container -->
         </sections>
         <!-- /.sections reviews -->
-        <p><a name="subscribe"></a></p>
-        <section class="section offer bg-secondary">
+        <section class="section offer bg-secondary" id="subscribe">
             <div class="container">
                 <div class="offer-block_price-bg offer__block">
                     <h2 class="offer__title">Закажите Nebbia-TWO с подпиской</h2>
                     <span class="offer__subtitle">и получите скидку</span>
-                    <form action="#" class="form form__offer" id="discount-zakaz" method="get" onsubmit="ym(61830181,'reachGoal','discount-zakaz'); return true;"></form>
+                    <form action="#" class="form form__offer">
                     <div class="form__row">
                         <div class="form__group">
                             <input type="text" class="input form__input" placeholder="Ваше имя">
@@ -283,7 +244,7 @@
                     </div>
                     <div class="form__row">
                         <div class="form__group">
-                            <input type="submit" class="button form__button" value="Заказать мою Nebbia-TWO" id="discount1" onclick="replaceButton1();">
+                            <input type="submit" class="button form__button" value="Заказать мою Nebbia-TWO" id="discount1" onclick="replaceButton1(); formReset2();">
                         </div>
                         <div class="">
                             <span class="form__policy">Ваши данные надежно защищены.</span>
@@ -291,12 +252,12 @@
                     </div>
                 </div>
                 <!-- /.offer-block offer__block -->
+            </form>
             </div>
             <!-- /.container -->
         </section>
         <!-- /.section offer -->
-        <p><a name="contacts"></a></p>
-        <section class="section contacts">
+        <section class="section contacts" id="contacts">
             <div class="container">
                 <h2 class="section-title section__title">Контакты</h2>
                 <div class="contacts-block">
@@ -337,7 +298,7 @@
             <div class="container">
                 <div class="offer-block offer-block_faq offer__block">
                     <h2 class="offer__title">Остались вопросы? Задайте их нам</h2>
-                    <form action="#" class="form form__faq"></form>
+                    <form action="#" class="form form__faq" id="question-form">
                     <div class="form__row">
                         <div class="form__group">
                             <input type="text" class="input form__input" placeholder="Ваше имя">
@@ -348,16 +309,17 @@
                     </div>
                     <div class="form__row">
                         <div class="form__group">
-                            <textarea name="faq" id="faq-field" cols="72" rows="10" placeholder="Вопрос/проблема/отзыв, как с Вами связаться"></textarea>
+                            <textarea style="resize: none;" maxlength="1000" name="faq" id="faq-field" cols="72" rows="10" placeholder="Вопрос/проблема/отзыв, как с Вами связаться"></textarea>
                         </div>
                     </div>
                     <div class="form__row">
                         <div class="form__group">
-                            <input type="submit" class="button form__button" value="Отправить" id="faq-form1" onclick="replaceButton2();">
+                            <input type="submit" class="button form__button" value="Отправить">
                         </div>
                     </div>
                 </div>
                 <!-- /.offer-block offer__block -->
+            </form>
             </div>
             <!-- /.container -->
         </section>

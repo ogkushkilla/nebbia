@@ -1,11 +1,18 @@
-function replaceButton() {
-    $('#form-zakaz1').replaceWith('<input type="submit" class="button form__button1" value="Заказ оформлен" id="form-zakaz2">');
-    }
+document.querySelector('button').addEventListener('click', function() {
+    document.querySelector('#main').classList.toggle('menu_active');
+});
 
-function replaceButton1() {
-    $('#discount1').replaceWith('<input type="submit" class="button form__button1" value="Заказ оформлен" id="discount2">');
-    }
+let anchors = document.querySelectorAll('header a[href*="#"]');
 
-function replaceButton2() {
-    $('#faq-form1').replaceWith('<input type="submit" class="button form__button1" value="Отправлено" id="faq-form2">');
+for (anchor of anchors) {
+    if (anchor) {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            anchorId = this.getAttribute('href');
+            console.log(anchorId)
+            document.querySelector(anchorId).scrollIntoView({
+                behavior: 'smooth', block: 'start'
+            })
+        })
     }
+}
